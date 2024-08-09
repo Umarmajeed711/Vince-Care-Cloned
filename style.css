@@ -1,0 +1,203 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  padding: 0px 20px;
+  border-bottom: 1px solid rgb(189, 186, 186);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color: snow;
+}
+#search {
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 350px;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+}
+.head {
+  display: flex;
+  column-gap: 30px;
+  background-color: #f7f7f7;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 12px 0px;
+}
+.head li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+.head li:hover {
+  border: 1px solid black;
+  padding: 3px 5px;
+  border-radius: 10px;
+}
+#cart {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.cover img {
+  width: 100%;
+  margin-top: 0px;
+}
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  gap: 20px 20px;
+  padding: 0px 50px;
+}
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+  font-size: 20px;
+}
+.card:hover,
+.card:active {
+  box-shadow: 10px 10px 10px rgb(189, 188, 188);
+}
+.card img {
+  width: 20vw;
+  height: 32vh;
+}
+
+#hand img {
+  width: 100%;
+  padding: 30px 0px;
+}
+h2 {
+  color: purple;
+  text-align: center;
+  font-size: 35px;
+}
+.bundle {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.but {
+  border: 1px solid black;
+  width: 170px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.but:hover,
+.but:active {
+  background-color: purple;
+  color: white;
+}
+
+.cent {
+  display: flex;
+  justify-content: center;
+  background-color: #d6dedb;
+  margin: 10px 100px;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tocard {
+  width: 15vw;
+  height: 350px;
+  border: 2px solid black;
+  text-align: center;
+  background-color: white;
+}
+.tocard:hover,
+.tocard:active {
+  transform: translateY(10px);
+}
+
+.tocard img {
+  padding-top: 50px;
+  width: 15vw;
+  height: 100px;
+}
+
+.to {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.to:hover,
+.to:active {
+  background-color: purple;
+  color: white;
+}
+
+.best {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.shop {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.shop img:hover {
+  border: 2px solid rgb(211, 211, 211);
+  border-radius: 50px;
+}
+
+.arrival {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+footer {
+  background-color: rgb(194, 190, 190);
+  padding: 10px;
+}
+
+.details {
+  padding: 20px;
+  padding-left: 10px;
+}
+
+.letter {
+  padding-left: 10px;
+}
+
+#email {
+  padding: 5px 10px;
+}
+#submit {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+}
+
+.copy {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
