@@ -5,29 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <header>
       <section class="header">
-        <h1>Vince</h1>
-        
+        <img src="vince-logo-SKIN.webp" alt="logo" id="mainlogo"/>
+        <div class="box">
         <input type="search" placeholder="search  " name="search" id="search" />
-        <p ><svg xmlns="http://www.w3.org/2000/svg" height="24px" id="cart" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></p>
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+        <div class="cart"> <a href="#"><p><i class="fa-solid fa-cart-shopping"></i></p></a>
+          <p>cart</p></div>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
       </section>
-      <nav>
+      <nav class="nav-bar">
         <ul class="head">
-          <li><a>Skin Care</a></li>
-          <li><a>Hair Care</a></li>
-          <li><a>Hair color</a></li>
-          <li><a>Best Seller</a></li>
-          <li><a>Men Range</a></li>
-          <li><a>All Products</a></li>
-          <li><a>Reviews</a></li>
+          <div class="box1">
+            <input type="search" placeholder="search  " name="search" id="search" />
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+          <li><a href="#">Skin Care</a></li>
+          <li><a href="#">Hair Care</a></li>
+          <li><a href="#">Hair color</a></li>
+          <li><a href="#">Best Seller</a></li>
+          <li><a href="#">Men Range</a></li>
+          <li><a href="#">All Products</a></li>
+          <li><a href="#">Reviews</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <script>
+        burger = document.querySelector(".burger");
+        burger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active")
+
+        }
+    </script>
       <section class="cover">
         <img src="main.jpg" alt="cover" />
       </section>
@@ -59,10 +84,10 @@
       <section>
         <h2>Bundle & Discounts</h2>
         <div class="bundle">
-          <div class="but">BEST SELLERS</div>
-          <div class="but">VITAMIN C BUNDLES</div>
-          <div class="but">HAIR CARE</div>
-          <div class="but">MEN RANGE</div>
+          <div class="but"> <a href="#">BEST SELLERS</a> </div>
+          <div class="but"> <a href="#">VITAMIN C BUNDLES</a> </div>
+          <div class="but"><a href="#">HAIR CARE</a></div>
+          <div class="but"><a href="#">MEN RANGE</a></div>
         </div>
         <div class="cent">
           <div class="add">
@@ -78,14 +103,14 @@
                 Top Offer
               </p>
 
-              <img src="30-day-kit_.webp" alt="card" />
-
-              <input
+              <img src="bundle2.jpg" alt="card" />
+              <a href="#"><input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
-              />
+              /></a>
+              
               <p>Frackle Challenge Kit</p>
               <p style="color: purple; font-weight: bolder">
                 <del>Rs.4,950.00</del>
@@ -105,13 +130,16 @@
                 Top Offer
               </p>
 
-              <img src="anti-hair-mockup.webp" alt="card" />
+              <img src="bundle4.webp" alt="card" />
+              <a href="#">
               <input
+
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
+            </a>
               <p>Anti Hair fall kit</p>
               <p style="color: purple; font-weight: bolder">
                 <del>Rs.4,950.00</del>
@@ -131,13 +159,15 @@
                 Top Offer
               </p>
 
-              <img src="Untitled-1-02_360x.webp" alt="card" />
+              <img src="bundle5.webp" alt="card" />
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
+            </a>
               <p>Natural Whiteing kit</p>
 
               <p style="color: purple; font-weight: bolder">
@@ -157,13 +187,15 @@
               >
                 Top Offer
               </p>
-              <img src="Regain_Biotin_360x.webp" alt="card" />
+              <img src="bundle3.webp" alt="card" />
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
+            </a>
               <p>Hair Re-growth powerful combo</p>
               <p style="color: purple; font-weight: bolder">
                 <del>Rs.4,950.00</del>
@@ -183,13 +215,15 @@
                 Top Offer
               </p>
 
-              <img src="NightBundle_360x.webp" alt="card" />
+              <img src="bundle1.webp" alt="card" />
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
+            </a>
               <p>Night Bundle</p>
               <p style="color: purple; font-weight: bolder">
                 <del>Rs.4,950.00</del>
@@ -216,19 +250,20 @@
             </p>
 
             <img src="best1.webp" alt="card" />
-
+             <a href="#">
             <input
               type="button"
               name="Add to Card"
               value="Add to Card"
               class="to"
             />
-            <p>Frackle Challenge Kit</p>
+          </a>
+            <p>Vitamin C serum</p>
             <p style="color: purple; font-weight: bolder">
-              <del>Rs.4,950.00</del>
+              <del>Rs.1,950.00</del>
             </p>
 
-            <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+            <ins style="color: purple; font-weight: bolder">Rs.1,250.00</ins>
           </div>
           <div class="tocard">
             <p
@@ -243,19 +278,20 @@
             </p>
 
             <img src="best2.webp" alt="card" />
-
+             <a href="#">
             <input
               type="button"
               name="Add to Card"
               value="Add to Card"
               class="to"
             />
-            <p>Frackle Challenge Kit</p>
+          </a>
+            <p>Niacianamiad + zinc serum</p>
             <p style="color: purple; font-weight: bolder">
-              <del>Rs.4,950.00</del>
+              <del>Rs.2,350.00</del>
             </p>
 
-            <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+            <ins style="color: purple; font-weight: bolder">Rs.1,850.00</ins>
           </div>
           <div class="tocard">
             <p
@@ -270,19 +306,20 @@
             </p>
 
             <img src="best5.webp" alt="card" />
-
+             <a href="#">
             <input
               type="button"
               name="Add to Card"
               value="Add to Card"
               class="to"
             />
-            <p>Frackle Challenge Kit</p>
+          </a>
+            <p>Bioten + Keratin mask</p>
             <p style="color: purple; font-weight: bolder">
-              <del>Rs.4,950.00</del>
+              <del>Rs.1,450.00</del>
             </p>
 
-            <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+            <ins style="color: purple; font-weight: bolder">Rs.1,250.00</ins>
           </div>
           <div class="tocard">
             <p
@@ -297,19 +334,20 @@
             </p>
 
             <img src="best4.webp" alt="card" />
-
+             <a href="#">
             <input
               type="button"
               name="Add to Card"
               value="Add to Card"
               class="to"
             />
-            <p>Frackle Challenge Kit</p>
+            </a>
+            <p>Extra Glow lightening cream</p>
             <p style="color: purple; font-weight: bolder">
-              <del>Rs.4,950.00</del>
+              <del>Rs.450.00</del>
             </p>
 
-            <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+            <ins style="color: purple; font-weight: bolder">Rs.350.00</ins>
           </div>
           <div class="tocard">
             <p
@@ -324,19 +362,20 @@
             </p>
 
             <img src="best3.webp" alt="card" />
-
+            <a href="#">
             <input
               type="button"
               name="Add to Card"
               value="Add to Card"
               class="to"
             />
-            <p>Frackle Challenge Kit</p>
+            </a>
+            <p>Retinol Night serum</p>
             <p style="color: purple; font-weight: bolder">
-              <del>Rs.4,950.00</del>
+              <del>Rs.2,450.00</del>
             </p>
 
-            <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+            <ins style="color: purple; font-weight: bolder">Rs.2,150.00</ins>
           </div>
         </div>
       </div>
@@ -344,10 +383,10 @@
       <section>
         <h2>New Arrivals</h2>
         <div class="arrival">
-          <div class="but">CREAMS</div>
-          <div class="but">BODY LOTION</div>
-          <div class="but">TONER</div>
-          <div class="but">SHOWER GEL</div>
+          <div class="but"><a href="#">CREAMS</a></div>
+          <div class="but"><a href="#">BODY LOTION</a></div>
+          <div class="but"><a href="#">TONER</a></div>
+          <div class="but"><a href="#">SHOWER GEL</a></div>
         </div>
         <div class="cent">
           <div class="add">
@@ -364,19 +403,20 @@
               </p>
 
               <img src="top4.webp" alt="card" />
-
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
-              <p>Frackle Challenge Kit</p>
+              </a>
+              <p>Multiple repairing cream</p>
               <p style="color: purple; font-weight: bolder">
-                <del>Rs.4,950.00</del>
+                <del>Rs.1,550.00</del>
               </p>
 
-              <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+              <ins style="color: purple; font-weight: bolder">Rs.1,350.00</ins>
             </div>
             <div class="tocard">
               <p
@@ -391,19 +431,20 @@
               </p>
 
               <img src="top3.webp" alt="card" />
-
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
-              <p>Frackle Challenge Kit</p>
+              </a>
+              <p>collagen cream</p>
               <p style="color: purple; font-weight: bolder">
-                <del>Rs.4,950.00</del>
+                <del>Rs.1,750.00</del>
               </p>
 
-              <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+              <ins style="color: purple; font-weight: bolder">Rs.1,550.00</ins>
             </div>
             <div class="tocard">
               <p
@@ -418,19 +459,20 @@
               </p>
 
               <img src="top2.webp" alt="card" />
-
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
-              <p>Frackle Challenge Kit</p>
+              </a>
+              <p>BB cream -Ivory</p>
               <p style="color: purple; font-weight: bolder">
-                <del>Rs.4,950.00</del>
+                <del>Rs.1,700.00</del>
               </p>
 
-              <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+              <ins style="color: purple; font-weight: bolder">Rs.1,520.10</ins>
             </div>
             <div class="tocard">
               <p
@@ -445,19 +487,20 @@
               </p>
 
               <img src="top1.webp" alt="card" />
-
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
-              <p>Frackle Challenge Kit</p>
+              </a>
+              <p>Extra glowing whiteing cream</p>
               <p style="color: purple; font-weight: bolder">
-                <del>Rs.4,950.00</del>
+                <del>Rs.495.00</del>
               </p>
 
-              <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+              <ins style="color: purple; font-weight: bolder">Rs.350.00</ins>
             </div>
             <div class="tocard">
               <p
@@ -472,19 +515,20 @@
               </p>
 
               <img src="top5.webp" alt="card" />
-
+              <a href="#">
               <input
                 type="button"
                 name="Add to Card"
                 value="Add to Card"
                 class="to"
               />
-              <p>Frackle Challenge Kit</p>
+              </a>
+              <p>Glowing cream for sensitive parts</p>
               <p style="color: purple; font-weight: bolder">
-                <del>Rs.4,950.00</del>
+                <del>Rs.1,300.00</del>
               </p>
 
-              <ins style="color: purple; font-weight: bolder">Rs.3,950.00</ins>
+              <ins style="color: purple; font-weight: bolder">Rs.1,149.00</ins>
             </div>
           </div>
         </div>
@@ -492,38 +536,82 @@
       <section>
         <h2>Shop by Ingredients</h2>
         <div class="shop">
-          <img src="inn1.webp" alt="ingridients" id="inn"/>
-          <img src="inn2.webp" alt="ingridients" id="inn"/>
-          <img src="in3.avif" alt="ingridients" id="inn"/>
-          <img src="inn4.webp" alt="ingridients" id="inn"/>
-          <img src="inn5.avif" alt="ingridients" id="inn"/>
-          <img src="inn6.avif" alt="ingridients" id="inn"/>
+          <a href="#"><img src="inn1.webp" alt="ingridients" id="inn"/></a> 
+          <a href="#"><img src="inn2.webp" alt="ingridients" id="inn"/></a>
+          <a href="#"><img src="in3.avif" alt="ingridients" id="inn"/></a>
+          <a href="#"><img src="inn4.webp" alt="ingridients" id="inn"/></a>
+          <a href="#"><img src="inn5.avif" alt="ingridients" id="inn"/></a>
+          <a href="#"><img src="inn6.avif" alt="ingridients" id="inn"/></a>
         </div>
       </section>
     </main>
-    <footer>
+    <footer >
+      <div class="footer">
       <section class="details">
+        <img src="vince-logo-for-post_new.webp" alt="logo" id="logo" /> 
         <p>2-C, Value Addition City,FIEDMC,Pakistan</p>
         <p>call us at : +923111222120.</p>
-        <p>Email:info@vincecare.com</p>
-        <br />
-        <br />
-        <h3>Follow Us</h3>
-        <a> </a>
+        <p>Email: <a href="#">info@vincecare.com</a></p>
+        
+        
+      </section>
+      <section class="vincecare">
+        <h4>Vince Care</h4>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Why Vince care</a></p>
+          <p><a href="#">Blogs</a></p>
+          <p><a href="#">Reviews</a></p>
+          <p><a href="#">Careers</a></p>
+          <p><a href="#">Contact Us</a></p>
+      </section>
+      <section class="business">
+        <h4>Business</h4>
+          <p><a href="#">Become a distributor</a></p>
+          <p><a href="#">Find in stores</a></p>
+          <p><a href="#">Quapty & safety</a></p>
+          <p><a href="#">Media partner</a></p>
+          
+        </ul>
+
+      </section>
+      <section class="help">
+        <h4>Helps and Terms</h4>
+          <p><a href="#">Shipping Policy</a></p>
+          <p><a href="#">Return & Refuned</a></p>
+          <p><a href="#">Reviews Guidelines</a></p>
+          <p><a href="#">Terms & Services</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">Track my Order</a></p>
+      </section>
+      <section class="brand">
+        <h4>Brand by Vince care</h4>
+        <p><a href="#">Vince Hair</a></p>
       </section>
       <section class="letter">
+        <h3>Follow Us</h3>
+        <div class="line">
+        <p><a href="www.instagram.com"><i class="fa-brands fa-instagram fa-xl "style="color: #635f5f;" ></i></a></p>
+        <p ><a href="www.facebook.com"><i class="fa-brands fa-facebook fa-xl" style="color: #635f5f;"></i></a></p>
+        <p><a href="www.twitter.com"><i class="fa-brands fa-square-twitter fa-xl" style="color: #635f5f;"></i></a></p>
+       <p><a href="www.tiktok.com"><i class="fa-brands fa-tiktok fa-xl" style="color: #635f5f;"></i></a></p>
+       <p><a href="www.amazon.com"><i class="fa-brands fa-amazon fa-xl" style="color: #635f5f;" ></i></a></p>
+        </div>
+        <p>
         <h3>Newsletter Sign Up</h3>
         <p>Recieve our latest updates.</p>
+      </p>
         <form>
           <input
             type="email"
             name="email"
             placeholder="Your Email Address"
             id="email"
+            required
           />
-          <input type="submit" value="submit" name="submit" id="submit" />
+          <p><input type="submit" value="SUBMIT" name="SUBMIT" id="submit" /></p>
         </form>
       </section>
+    </div>
     </footer>
     <section class="copy">
       <p>Copyrights &copy; 2024.All right reserved by vincecare</p>
